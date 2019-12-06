@@ -1,49 +1,49 @@
 <div class="row">
-  <div class="col-4">
-      <h1>Mariano Melgarejo</h1>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/MarianoMelgarejo.jpg" alt="Foto presidente">
+  <div class="col-4 justify-content-center">
+      <h1 class="text-center">Mariano Melgarejo</h1>
+      <img class="rounded mx-auto d-block" src="https://upload.wikimedia.org/wikipedia/commons/0/08/MarianoMelgarejo.jpg" alt="Foto presidente">
   </div>
   <div class="col-4">
-      <h1>Mariano Melgarejo</h1>
-      <img src="http://www.redescuela.org/uploads/WikiEscuela/JoseDeBallivian08.jpg" alt="Foto presidente">
+      <h1 class="text-center">José Ballivián</h1>
+      <img class="rounded mx-auto d-block" src="http://www.redescuela.org/uploads/WikiEscuela/JoseDeBallivian08.jpg" alt="Foto presidente">
   </div>
   <div class="col-4">
-      <h1>Mariano Melgarejo</h1>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Jos%C3%A9_Mar%C3%ADa_Linares.jpg" alt="Foto presidente">
+      <h1 class="text-center" >José María Linares</h1>
+      <img class="rounded mx-auto d-block" src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Jos%C3%A9_Mar%C3%ADa_Linares.jpg" alt="Foto presidente">
   </div>
 </div>
 
 <div class="row">
-  <div class="col-4">
-    <h3>
+  <div class="col-4 justify-content-center">
+    <h3 class="text-center">
         {{barChartData[0].data[0]}}
     </h3>
-    <button class="btn btn-primary" (click)="votar(0)">
+    <button class="btn btn-primary mx-auto btn-block" (click)="votar(0)">
         Votar
     </button>
-    <h3>
+    <h3 class="text-center">
         {{barChartData[0].data[0]*100/50}} %
     </h3>
   </div>
   <div class="col-4">
-    <h3>
+    <h3 class="text-center">
         {{barChartData[1].data[0]}}
     </h3>
-    <button class="btn btn-primary" (click)="votar(1)">
+    <button class="btn btn-primary mx-auto btn-block" (click)="votar(1)">
         Votar
     </button>
-    <h3>
+    <h3 class="text-center">
         {{barChartData[1].data[0]*100/50}} %
     </h3>
   </div>
   <div class="col-4">
-      <h3>
+      <h3 class="text-center">
           {{barChartData[2].data[0]}}
       </h3>
-      <button class="btn btn-primary" (click)="votar(2)">
+      <button class="btn btn-primary mx-auto btn-block" (click)="votar(2)">
           Votar
       </button>
-      <h3>
+      <h3 class="text-center">
           {{barChartData[2].data[0]*100/50}} %
       </h3>
     </div>
