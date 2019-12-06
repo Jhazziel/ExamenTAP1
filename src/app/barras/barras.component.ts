@@ -13,7 +13,7 @@ export class BarrasComponent {
     scaleShowVerticalLines: false,
     responsive: true
   };
-  public barChartLabels = ['2019'];
+  public barChartLabels = ['',''];
   public barChartType = 'bar';
   public barChartLegend = true;
   public barChartData = [
@@ -21,6 +21,12 @@ export class BarrasComponent {
     {data: [0], label: 'Ballivian'},
     {data: [0], label: 'Linares'}
   ];
+  /**
+   *
+   */
+  constructor() {
+
+  }
 
   public chartClicked(e: any): void {
     console.log(e);
@@ -52,5 +58,15 @@ export class BarrasComponent {
     let clone = this.barChartData;
     clone[id].data = data;
     this.barChartData = clone;
+    this.execBarras();
+  }
+
+  execBarras(){
+
+    this.barChartData = [
+      {data: [this.barChartData[0].data[0]], label: 'Melgarejo'},
+      {data: [this.barChartData[1].data[0]], label: 'Ballivian'},
+      {data: [this.barChartData[2].data[0]], label: 'Linares'}
+    ];
   }
 }
